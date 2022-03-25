@@ -10,7 +10,7 @@
 <script>
   'use strict';
 
-  import { getDocument } from 'pdfjs-dist';
+  import { getDocument } from 'pdfjs-dist/es5/build/pdf';
   import {
     DefaultAnnotationLayerFactory,
     DefaultTextLayerFactory,
@@ -18,9 +18,9 @@
     PDFLinkService,
     PDFPageView,
     EventBus
-  } from 'pdfjs-dist/web/pdf_viewer.js';
+  } from 'pdfjs-dist/es5/web/pdf_viewer.js';
   import resizeSensor from 'vue-resize-sensor'
-  import PdfjsWorker from 'pdfjs-dist/build/pdf.worker.entry'
+  import PdfjsWorker from 'pdfjs-dist/es5/build/pdf.worker.entry'
   function isPDFDocumentLoadingTask(obj) {
     return typeof (obj) === 'object' && obj !== null && obj.__PDFDocumentLoadingTask === true;
   }

@@ -1,15 +1,15 @@
 {
-  "name": "pdfvuer",
-  "description": "A PDF viewer for Vue using Mozilla's PDF.js",
-  "version": "1.9.2",
+  "name": "@rem.tools/pdfvuer-es5",
+  "description": "A PDF viewer for Vue using Mozilla's PDF.js with ES5 support",
+  "version": "1.9.3",
   "author": "Gaurav Koley <arkokoley@live.in>",
   "license": "MIT",
-  "homepage": "https://github.com/arkokoley/pdfvuer#pdfvuer",
+  "homepage": "https://github.com/gndra/pdfvuer#pdfvuer",
   "bugs": {
-    "url": "https://github.com/arkokoley/pdfvuer/issues",
+    "url": "https://github.com/gndra/pdfvuer/issues",
     "email": "arkokoley@live.in"
   },
-  "repository": "github:arkokoley/pdfvuer",
+  "repository": "github:gndra/pdfvuer",
   "main": "src/Pdfvuer.vue",
   "unpkg": "dist/pdfvuer.umd.min.js",
   "files": [
@@ -18,7 +18,8 @@
   ],
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js",
-    "build": "vue-cli-service build --target lib --name pdfvuer src/Pdfvuer.vue"
+    "build": "vue-cli-service build --target lib --name pdfvuer src/Pdfvuer.vue",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "pdfjs-dist": "2.5.207",
